@@ -14,7 +14,7 @@ namespace PersonDataManagement
             List<Person> listOfPerson = new List<Person>();
             //UC1 - Creating Person Class and Adding Data
             AddingPersonDetails(listOfPerson);
-            PersonDataManagement.AgeBetween13to18(listOfPerson);
+            PersonDataManagement.AverageAge(listOfPerson);
             Console.ReadLine();
         }
         public static void AddingPersonDetails(List<Person> list)

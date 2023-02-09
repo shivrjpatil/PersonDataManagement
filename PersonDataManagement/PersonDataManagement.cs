@@ -20,5 +20,10 @@ namespace PersonDataManagement
             Console.WriteLine("\nRecord found Betwwen Age 13 to 18");
             Program.DisplayPersonDetails(teenage);
         }
+        public static void AverageAge(List<Person> list)
+        {
+            var avgAge = list.Average(p => p.Age);
+            Console.WriteLine("\nAverage Age is : " + Math.Round(avgAge, 2));
+        }
     }
 }

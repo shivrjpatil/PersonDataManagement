@@ -13,7 +13,7 @@ namespace PersonDataManagement
             Console.WriteLine("Welcome to Person Data Management..!");
             List<Person> listOfPerson = new List<Person>();
             AddingPersonDetails(listOfPerson);
-            PersonDataManagement.NameCheck(listOfPerson,"Shiv");
+            PersonDataManagement.SkipLessThan60(listOfPerson);
             Console.ReadLine();
         }
         public static void AddingPersonDetails(List<Person> list)

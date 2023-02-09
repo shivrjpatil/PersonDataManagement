@@ -38,5 +38,11 @@ namespace PersonDataManagement
                 Console.WriteLine("\nName is not Present");
             }
         }
+        public static void SkipLessThan60(List<Person> list)
+        {
+            var skipAge = list.SkipWhile(p => p.Age < 60);
+            Console.WriteLine("\nSkip record from the list for age is less than 60");
+            Program.DisplayPersonDetails(skipAge);
+        }
     }
 }

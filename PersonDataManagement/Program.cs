@@ -14,14 +14,14 @@ namespace PersonDataManagement
             List<Person> listOfPerson = new List<Person>();
             //UC1 - Creating Person Class and Adding Data
             AddingPersonDetails(listOfPerson);
-            PersonDataManagement.RetrieveTop2Below60(listOfPerson);
+            PersonDataManagement.AgeBetween13to18(listOfPerson);
             Console.ReadLine();
         }
         public static void AddingPersonDetails(List<Person> list)
         {
             list.Add(new Person() { SSN = 1, Name = "Shiv", Address = "Belgaum", Age = 29 });
-            list.Add(new Person() { SSN = 2, Name = "Anand", Address = "Hubli", Age = 10});
-            list.Add(new Person() { SSN = 3, Name = "Hari", Address = "Dharwad", Age = 20 });
+            list.Add(new Person() { SSN = 2, Name = "Anand", Address = "Hubli", Age = 15});
+            list.Add(new Person() { SSN = 3, Name = "Hari", Address = "Dharwad", Age = 17 });
             list.Add(new Person() { SSN = 4, Name = "Shubham", Address = "Pune", Age = 30 });
             list.Add(new Person() { SSN = 5, Name = "Mahesh", Address = "Mysoor", Age = 56 });
             list.Add(new Person() { SSN = 6, Name = "Prasad", Address = "Mumbai", Age = 70 });

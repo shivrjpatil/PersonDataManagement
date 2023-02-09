@@ -12,9 +12,8 @@ namespace PersonDataManagement
         {
             Console.WriteLine("Welcome to Person Data Management..!");
             List<Person> listOfPerson = new List<Person>();
-            //UC1 - Creating Person Class and Adding Data
             AddingPersonDetails(listOfPerson);
-            PersonDataManagement.AverageAge(listOfPerson);
+            PersonDataManagement.NameCheck(listOfPerson,"Shiv");
             Console.ReadLine();
         }
         public static void AddingPersonDetails(List<Person> list)

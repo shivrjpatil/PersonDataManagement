@@ -14,6 +14,7 @@ namespace PersonDataManagement
             List<Person> listOfPerson = new List<Person>();
             //UC1 - Creating Person Class and Adding Data
             AddingPersonDetails(listOfPerson);
+            PersonDataManagement.RetrieveTop2Below60(listOfPerson);
             Console.ReadLine();
         }
         public static void AddingPersonDetails(List<Person> list)
